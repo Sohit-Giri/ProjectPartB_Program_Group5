@@ -9,4 +9,5 @@
 
 Note: To ensure the proper functioning of **Module 3: Charging Station Locator**, make sure that the stations.csv file is available in the following directory:
 **/data/stations.csv**
+
 This file is essential for the application to retrieve and display charging station locations correctly.
