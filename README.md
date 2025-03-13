@@ -7,4 +7,4 @@
 5. Samyam Ghimire
 
 
-Note: Ensure to have stations.csv inside /data/stations.csv file to be downloaded for proper functioning of **Module 3: ChargingStationLocator**.
+Note: To ensure the proper functioning of **Module 3: Charging Station Locator**, make sure that the stations.csv file is available in the following directory:
