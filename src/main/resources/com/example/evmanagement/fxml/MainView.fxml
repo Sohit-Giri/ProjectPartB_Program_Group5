@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.evmanagement.controller.MainController" stylesheets="@../css/styles.css">
+    <children>
+        <TabPane fx:id="mainTabPane" prefWidth="800.0" prefHeight="600.0" AnchorPane.topAnchor="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <tabs>
+                <Tab fx:id="tabUserProfile" text="User Profile" />
+                <Tab fx:id="tabTripPlanning" text="Trip Planning" />
+                <Tab fx:id="tabChargingStation" text="Charging Stations" />
+                <Tab fx:id="tabEnvironmentalAnalytics" text="Environmental Analytics" />
+                <Tab fx:id="tabCostComparison" text="Cost Comparison" />
+                <Tab fx:id="tabProgressVisualization" text="Progress Visualization" />
+                <Tab fx:id="tabEmergencyAssistance" text="Emergency Assistance" />
+                <Tab fx:id="tabDailyEnergyTracker" text="Daily Energy Tracker" />
+            </tabs>
+        </TabPane>
+    </children>
+</AnchorPane>

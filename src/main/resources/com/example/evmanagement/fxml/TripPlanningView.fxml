@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.TextField?>
+<GridPane xmlns:fx="http://javafx.com/fxml"
+          fx:controller="com.example.evmanagement.controller.TripPlanningController"
+          hgap="10" vgap="10" stylesheets="@../css/styles.css" alignment="CENTER">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+    <children>
+        <Label text="Start Point:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+        <ComboBox fx:id="startPointComboBox" promptText="Select starting point"
+                  GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+        <Label text="Destination:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+        <ComboBox fx:id="destinationComboBox" promptText="Select destination"
+                  GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+        <Label text="Battery Level (%):" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+        <TextField fx:id="txtBatteryLevel" promptText="Enter battery level"
+                   GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+        <Button text="Calculate Route" onAction="#handleCalculateRoute"
+                GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+        <Button text="Recommend Charging Stop" onAction="#handleRecommendChargingStop"
+                GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+        <Button text="Estimate Battery Usage" onAction="#handleEstimateBatteryUsage"
+                GridPane.rowIndex="4" GridPane.columnIndex="0" GridPane.columnSpan="2"/>
+    </children>
+</GridPane>

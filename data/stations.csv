@@ -1,0 +1,6 @@
+Name,Latitude,Longitude,TotalChargers,AvailableChargers,Price,WaitingTime
+Station A,27.7172,85.3240,10,5,0.50,15
+Station B,27.6825,85.3150,6,3,0.55,10
+Station C,27.7050,85.3300,8,8,0.48,5
+Station D,27.6900,85.3200,4,2,0.60,20
+Station E,27.7200,85.3400,12,10,0.45,8

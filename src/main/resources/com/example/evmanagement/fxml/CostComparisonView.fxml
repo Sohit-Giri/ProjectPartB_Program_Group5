@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.layout.GridPane?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml"
+          fx:controller="com.example.evmanagement.controller.CostComparisonController"
+          hgap="10" vgap="10" stylesheets="@../css/styles.css" alignment="CENTER">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+    <children>
+        <Label text="Electricity Rate:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+        <TextField fx:id="txtElectricityRate" promptText="Enter electricity rate"
+                   GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+        <Label text="Fuel Rate:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+        <TextField fx:id="txtFuelRate" promptText="Enter fuel rate" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+        <Button text="Compare Costs" onAction="#handleCompareCosts"
+                GridPane.rowIndex="2" GridPane.columnIndex="0" GridPane.columnSpan="2"/> <TableView fx:id="tableCostComparison" GridPane.rowIndex="3" GridPane.columnIndex="0"
+                                                                                                    GridPane.columnSpan="2"> <columns>
+        <TableColumn fx:id="evCostColumn" text="EV Cost"/>
+        <TableColumn fx:id="fuelCostColumn" text="Fuel Cost"/>
+        <TableColumn fx:id="costDifferenceColumn" text="Cost Difference"/>
+        <TableColumn fx:id="percentageDifferenceColumn" text="Percentage Difference"/>
+    </columns>
+    </TableView>
+
+    </children>
+</GridPane>

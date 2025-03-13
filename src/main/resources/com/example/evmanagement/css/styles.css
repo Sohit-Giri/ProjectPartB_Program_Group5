@@ -1,0 +1,259 @@
+/* --- Root Styles --- */
+.root {
+    -fx-font-family: "Roboto", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Modern font choice */
+    -fx-background-color: linear-gradient(to bottom, #e8f5e9, #c8e6c9); /* Light green gradient for EV theme */
+    -fx-font-size: 14px; /* Consistent base font size */
+    -fx-text-fill: #333333; /* Darker, more readable text */
+}
+
+/* --- Button Styles --- */
+.button {
+    -fx-background-color: #2979ff; /* Bright blue for primary actions */
+    -fx-text-fill: white;
+    -fx-padding: 10px 20px; /* Increased padding for better touch/click area */
+    -fx-font-size: 14px;
+    -fx-font-weight: 500; /* Semi-bold font weight */
+    -fx-background-radius: 8px; /* Slightly more rounded corners */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 5, 0, 0, 2); /* Subtle shadow */
+    -fx-cursor: hand; /* Changes cursor on hover */
+    -fx-transition: all 0.2s ease-in-out; /* Smooth transition */
+}
+
+.button:hover {
+    -fx-background-color: #0d47a1; /* Darker shade on hover */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0, 0, 2); /* Stronger shadow on hover */
+}
+
+.button:pressed {
+    -fx-background-color: #1565c0; /* Slightly darker on press */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 3, 0, 0, 1); /* Reduced shadow on press */
+}
+
+/* --- Text Field Styles --- */
+.text-field {
+    -fx-background-color: white;
+    -fx-border-color: #ced4da; /* More subtle border color */
+    -fx-border-radius: 6px; /* Slightly more rounded corners */
+    -fx-padding: 8px 12px; /* Adjusted padding */
+    -fx-font-size: 14px;
+    -fx-effect: innershadow(gaussian, rgba(0, 0, 0, 0.05), 3, 0, 0, 1); /* Subtle inner shadow */
+}
+
+.text-field:focused {
+    -fx-border-color: #2979ff; /* Highlighted border on focus */
+    -fx-effect: innershadow(gaussian, rgba(0, 0, 0, 0.1), 5, 0, 0, 2); /* Stronger inner shadow on focus */
+}
+
+/* --- Label Styles --- */
+.label {
+    -fx-font-size: 14px;
+    -fx-font-weight: 400; /* Regular font weight */
+    -fx-text-fill: #546e7a; /* Muted text color */
+}
+
+.header-label {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1b5e20; /* Dark green for EV theme */
+    -fx-padding: 15px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 10, 0, 0, 2);
+}
+
+.form-label {
+    -fx-font-size: 16px;
+    -fx-text-fill: #388e3c; /* Medium green for form labels */
+    -fx-font-weight: bold;
+    -fx-alignment: center-right;
+    -fx-padding: 5px;
+}
+
+/* --- Table View Styles --- */
+.table-view {
+    -fx-border-color: #ced4da;
+    -fx-background-color: white;
+    -fx-background-radius: 8px; /* Rounded corners for the table */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 5, 0, 0, 2); /* Subtle shadow */
+}
+
+.table-view:focused {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0, 0, 2); /* Stronger shadow on focus */
+}
+
+.table-view .column-header {
+    -fx-background-color: #e0e0e0; /* Lighter header background */
+    -fx-border-color: #ced4da;
+    -fx-padding: 8px;
+}
+
+.table-view .column-header .label {
+    -fx-font-weight: 500; /* Semi-bold header text */
+    -fx-text-fill: #333333;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #f9f9f9; /* Light gray for alternating rows */
+}
+
+/* --- Chart Styles --- */
+.chart {
+    -fx-background-color: white;
+    -fx-border-color: #ced4da;
+    -fx-background-radius: 8px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 5, 0, 0, 2);
+}
+
+.chart:focused {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0, 0, 2);
+}
+
+/* --- Tab Pane Styles --- */
+.tab-pane {
+    -fx-tab-min-width: 140px;
+    -fx-tab-max-width: 200px;
+    -fx-tab-min-height: 35px; /* Slightly taller tabs */
+}
+
+.tab-header-area .tab-header-background {
+    -fx-background-color: #e0e0e0; /* Lighter tab header background */
+}
+
+.tab {
+    -fx-background-color: #f0f4f8; /* Tab background color */
+    -fx-border-color: #ced4da; /* Tab border color */
+    -fx-border-width: 0 0 1 0; /* Only bottom border */
+}
+
+.tab:selected {
+    -fx-background-color: white; /* Selected tab background */
+    -fx-border-color: #2979ff; /* Highlighted border for selected tab */
+    -fx-border-width: 0 0 2 0; /* Stronger bottom border for selected tab */
+}
+
+.tab .tab-label {
+    -fx-font-weight: 500; /* Semi-bold tab text */
+    -fx-text-fill: #333333;
+}
+
+/* --- Combo Box Styles --- */
+.combo-box {
+    -fx-background-color: white;
+    -fx-border-color: #ced4da;
+    -fx-border-radius: 6px;
+    -fx-padding: 8px 12px;
+    -fx-font-size: 14px;
+    -fx-effect: innershadow(gaussian, rgba(0, 0, 0, 0.05), 3, 0, 0, 1);
+}
+
+.combo-box:focused {
+    -fx-border-color: #2979ff;
+    -fx-effect: innershadow(gaussian, rgba(0, 0, 0, 0.1), 5, 0, 0, 2);
+}
+
+.combo-box .list-cell {
+    -fx-padding: 5px;
+    -fx-font-size: 14px;
+}
+
+.combo-box .list-view {
+    -fx-background-color: white;
+    -fx-border-color: #ced4da;
+}
+
+/* --- ScrollPane Styles --- */
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane .viewport {
+    -fx-background-color: #e8f5e9; /* Light green */
+}
+
+.scroll-pane .scroll-bar {
+    -fx-background-color: #81c784; /* Soft green */
+    -fx-padding: 2px;
+}
+
+.scroll-pane .scroll-bar .track {
+    -fx-background-color: #c8e6c9; /* Lighter green */
+    -fx-border-radius: 5px;
+}
+
+.scroll-pane .scroll-bar .thumb {
+    -fx-background-color: #66bb6a; /* Medium green */
+    -fx-background-insets: 2;
+    -fx-border-radius: 5px;
+}
+
+.scroll-pane .scroll-bar:horizontal {
+    -fx-opacity: 0; /* Hide horizontal scrollbar unless needed */
+}
+
+.scroll-pane:hover .scroll-bar {
+    -fx-opacity: 1; /* Show scrollbar on hover */
+}
+
+/* --- Additional Classes from Original CSS --- */
+.action-button {
+    -fx-background-color: linear-gradient(to bottom, #66bb6a, #43a047); /* Gradient green */
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 12px 25px;
+    -fx-border-radius: 25px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 5, 0, 0, 2);
+}
+
+.action-button:hover {
+    -fx-background-color: linear-gradient(to bottom, #43a047, #2e7d32); /* Darker green gradient */
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.action-button:pressed {
+    -fx-background-color: linear-gradient(to bottom, #2e7d32, #1b5e20); /* Even darker green */
+    -fx-scale-x: 0.95;
+    -fx-scale-y: 0.95;
+}
+
+.form-field {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #81c784; /* Soft green */
+    -fx-border-radius: 8px;
+    -fx-padding: 10px;
+    -fx-font-size: 14px;
+    -fx-prompt-text-fill: #aaaaaa;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 5, 0, 0, 2);
+}
+
+.form-field:hover {
+    -fx-border-color: #388e3c; /* Darker green on hover */
+    -fx-transition: border-color 0.3s ease-in-out;
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        -fx-opacity: 0;
+    }
+    to {
+        -fx-opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        -fx-translate-y: -20px;
+    }
+    to {
+        -fx-translate-y: 0px;
+    }
+}
+
+/* Apply animations to labels and buttons */
+.form-label, .action-button {
+    -fx-animation: fadeIn 0.5s ease-in-out, slideIn 0.5s ease-in-out;
+}

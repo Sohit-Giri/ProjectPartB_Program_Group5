@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TextArea?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.evmanagement.controller.EmergencyAssistanceController"
+      spacing="10" alignment="CENTER" stylesheets="@../css/styles.css">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+    <children>
+        <Label text="Add Emergency Contact"/>
+        <HBox spacing="5" alignment="CENTER_LEFT">
+            <Label text="Name:"/>
+            <TextField fx:id="txtName" promptText="Enter Name"/>
+            <Label text="Contact Number:"/>
+            <TextField fx:id="txtPhoneNumber" promptText="Enter Contact Number"/>
+            <Button text="Add" onAction="#handleAddContact"/>
+        </HBox>
+        <Label text="Emergency Contacts"/>
+        <TextArea fx:id="txtEmergencyContacts" prefHeight="150" prefWidth="400" wrapText="true" editable="false"/>
+        <Button text="Save Contacts" onAction="#handleSaveContacts"/>
+        <Button text="Trigger SOS" onAction="#handleTriggerSOS"/>
+        <Button text="Share Location" onAction="#handleShareLocation"/>
+    </children>
+</VBox>

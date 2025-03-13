@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.evmanagement.controller.EnvironmentalAnalyticsController" spacing="10" alignment="CENTER" stylesheets="@../css/styles.css">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+    <children>
+        <Label text="Distance Travelled (km):"/>
+        <TextField fx:id="txtDistanceTravelled" promptText="Enter distance"/>
+        <Button text="Calculate CO₂ Savings" onAction="#handleCalculateCO2Savings"/>
+        <BarChart fx:id="barChartSavings" prefHeight="300" prefWidth="500">
+            <xAxis>
+                <CategoryAxis label="Category"/>
+            </xAxis>
+            <yAxis>
+                <NumberAxis label="CO₂ (kg)"/>
+            </yAxis>
+        </BarChart>
+    </children>
+</VBox>

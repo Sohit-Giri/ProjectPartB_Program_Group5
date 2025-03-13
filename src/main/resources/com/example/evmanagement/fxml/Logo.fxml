@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<HBox xmlns:fx="http://javafx.com/fxml" alignment="CENTER_LEFT" spacing="10" styleClass="logo">
+    <children>
+        <TextFlow>
+            <Text text="EV" styleClass="logo-text-primary"/>
+            <Text text="Manager" styleClass="logo-text-secondary"/>
+        </TextFlow>
+    </children>
+</HBox>
